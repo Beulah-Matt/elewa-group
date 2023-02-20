@@ -1,1 +1,31 @@
-<section class="team__section">team-members works!</section>
+<div class="wrapper">
+    <div class="heading">
+        <h1 class="title">Management</h1>
+        <h1 class="team">Team</h1>
+    </div>
+    <div class="card" [ngStyle]="{ 'transform': 'translateX(' + -50 * currentIndex + 'vh)' }">
+        <div class="card__body" *ngFor="let teamMember of teamMembers">
+            <img class="card__image" src="{{teamMember.imageUrl}}" />
+            <h3 class="name">{{teamMember.name}}</h3>
+            <p class="role">{{teamMember.role}}</p>
+            <a href="{{teamMember.linkedIn}}"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <div class="buttons-container">
+        <button (click)="previous()">
+            <i class="fa-thin fa-arrow-right"></i>
+        </button>
+        <button (click)="next()">
+            <i class="fa-thin fa-arrow-left"></i>
+        </button>
+      </div>
+</div>
+
+<!-- <div class='card'>
+    <div class="card-body" *ngFor="let teamMember of teamMembers">
+        <img class='card-image' src={{teamMember.imageUrl}} alt='meet the team' />
+        <h3 class='card-title'>{teamMember.name}}</h3>
+        <p class='card-desc'>{teamMember.role}}</p>
+        <i class="fa-brands fa-linkedin-in">{{teamMember.linkedIn}}</i>
+    </div>
+</div> -->

@@ -1,9 +1,63 @@
-.team__section{
+.card{
+    padding: 0px 10px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    //gap: 4px;
+    margin-top: 2rem;
+    transition: transform 0.4s ease-out;
+}
+.card__body{
+   // border-radius: 20px;
+    //width: 25%;
+    margin: 1px;
+}
+.wrapper{
     background-color: var(--elewa-group-website-color-primary);
     font-family: var(--elewa-group-website-dmsans-medium);
     color: var(--elewa-group-website-color);
-    height: 500px;
-    width: 100%;
-    border-radius: 20px;
-    padding: 10px;
+    height: auto;
+    padding: 10px 50px;
 }
+.card__image{
+    width: 380px;
+    height: 420px;
+    border-radius: 20px;
+}
+.heading{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    gap: 80px;
+}
+.title{
+    border-right: 3px solid white;
+    height: auto;
+    padding-right: 80px;
+}
+.team{
+    color: gray;
+}
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding-left: 1500px;
+  }
+  
+  .buttons-container i{
+    height: 40px;
+    width: 40px;
+  }
+  
+  button {
+    padding: 10px 13px;
+    margin: 10px 10px;
+    border-radius: 100%;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+  }
